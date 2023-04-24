@@ -97,8 +97,8 @@ window.onload = async function() {
             let color = null;
             let fontSize = null;
             let strippedRatingCount = ratingCount.replace(/\s/g, '');
-            span.innerHTML = `<b
-            ${rating} - ${ratingCount}</b>`;
+            console.log(ratingCount);
+            span.innerHTML = `<b>${rating} - ${ratingCount}</b>`;
             if (strippedRatingCount >= 1000) {
                 color = 'black'; // highlight yellow if ratingCount is greater than 1000
                 fontSize = "20px";
